@@ -1,1 +1,1 @@
-# LinkedIn-Clone
+# Amazon-Clone

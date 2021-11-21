@@ -36,3 +36,10 @@ ul {
   vertical-align: baseline;
   background: transparent;
 }
+
+div {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  margin-bottom: 10px;
+}

@@ -1,18 +1,19 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import "./App.css";
-import Login from "./components/Login";
+import { Outlet, Link } from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <Login />
-        </Route>
-      </Switch>
-    </Router>
+    <div>
+      <h1>Bookkeeper</h1>
+      <nav
+        style={{
+          borderBottom: "solid 1px",
+          paddingBottom: "1rem",
+        }}
+      >
+        <Link to="/invoices">Invoices</Link> |{" "}
+        <Link to="/expenses">Expenses</Link>
+      </nav>
+      <Outlet />
+    </div>
   );
 }
-
-export default App;
